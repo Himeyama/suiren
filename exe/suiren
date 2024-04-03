@@ -1,0 +1,64 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "suiren"
+require "optparse"
+
+@i18n = {
+  "en": {
+    "port": "Port number",
+    "version_info": "Displays version information",
+    "license_info": "Displays license information",
+    "bind_addr": "Set the bind address",
+    "content": "Set the content to reply to"
+  },
+  "ja": {
+    "port": "ポート番号",
+    "version_info": "バージョン情報を表示します",
+    "license_info": "ライセンス情報を表示します",
+    "bind_addr": "Bind アドレスを設定します",
+    "content": "返信するコンテンツを設定します"
+  }
+}
+
+def i18n(tag)
+  lang = :en
+  lang = :ja if ENV["LANG"].downcase.include?("ja")
+  @i18n[lang][tag]
+end
+
+opt = OptionParser.new
+bind_addr = "localhost"
+port = 8080
+content = String.new
+
+opt.on("-V", "--version", i18n(:version_info)) do |_v|
+  puts("#{File.basename($PROGRAM_NAME)} (#{Suiren::VERSION})")
+  exit(true)
+end
+
+opt.on("--license", i18n(:license_info)) do |_v|
+  puts(Suiren::COPYRIGHT)
+  exit(true)
+end
+
+opt.on("--bind-address [Bind Address]", i18n(:bind_addr)) do |addr|
+  bind_addr = addr
+end
+
+opt.on("-p [Port]", "--port", i18n(:port)) do |p|
+  port = p.to_i
+end
+
+opt.on("-c [Content]", "--content", i18n(:content)) do |cont|
+  content = cont
+end
+
+begin
+  opt.parse!(ARGV)
+rescue OptionParser::InvalidOption
+  warn(comment(:option_not_appropriate))
+  exit(false)
+end
+
+Suiren::Suiren.new(bind_addr, port, content: content)
