@@ -1,0 +1,27 @@
+ja:
+  teception_time: 受信時刻
+  server_running: サーバーが http://%s:%d で実行中です
+  address_already: アドレスが既に使用されています
+  port: ポート番号
+  version_info: バージョン情報を表示します
+  license_info: ライセンス情報を表示します
+  bind_addr: Bind アドレスを設定します
+  content: 返信するコンテンツを設定します
+en:
+  teception_time: Reception Time
+  server_running: Server is running at http://%s:%d
+  address_already: Address is already in use
+  port: Port Number
+  version_info: Display Version Information
+  license_info: Display License Information
+  bind_addr: Set Bind Address
+  content: Set Content to Reply
+zh_TW:
+  teception_time: 接收時間
+  server_running: 伺服器正在 http://%s:%d 運行
+  address_already: 地址已在使用中
+  port: 埠號
+  version_info: 顯示版本資訊
+  license_info: 顯示許可證資訊
+  bind_addr: 設定綁定地址
+  content: 設定回覆內容

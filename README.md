@@ -1,35 +1,57 @@
-# Suiren
+# suiren (睡蓮)
+suiren はコマンドを HTTP リクエストを表示するコマンドです。
 
-TODO: Delete this and the text below, and describe your gem
+## インストールについて
+### gem のインストール
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/suiren`. To experiment with that code, run `bin/console` for an interactive prompt.
+```bash
+gem install suiren
+```
 
-## Installation
+### パッケージに追加
+```bash
+bundle add suiren
+```
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+## 使用法
+suiren は日本語と英語と台湾語に対応しています。
 
-Install the gem and add to the application's Gemfile by executing:
+日本語で使用する場合:
 
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+```bash
+LANG=ja_JP.UTF-8 suiren
+```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+英語で使用する場合:
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+```bash
+LANG= suiren
+```
 
-## Usage
+台湾語で使用する場合:
 
-TODO: Write usage instructions here
+```bash
+LANG=zh_TW.UTF-8 bundle exec suiren
+```
 
-## Development
+システムの言語が優先されます。
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+### 使い方を見る
+```bash
+$ suiren -h
+Usage: suiren [options]
+    -V, --version                    バージョン情報を表示します
+        --license                    ライセンス情報を表示します
+        --bind-address [Bind Address]
+                                     Bind アドレスを設定します
+    -p, --port [Port]                ポート番号
+    -c, --content [Content]          返信するコンテンツを設定します
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+## 貢献
 
-## Contributing
+バグレポートとプルリクエストは https://GitHub.com/Himeyama/suiren で行うことができます。
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/suiren.
+## ライセンス
 
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+この gem は、[MIT ライセンス](https://opensource.org/licenses/MIT)) の条件の下でオープンソースとして利用できます。

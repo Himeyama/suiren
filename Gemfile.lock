@@ -9,6 +9,9 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
+    concurrent-ruby (1.2.3)
+    i18n (1.14.4)
+      concurrent-ruby (~> 1.0)
     json (2.7.1)
     language_server-protocol (3.17.0.3)
     parallel (1.24.0)
@@ -41,6 +44,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  i18n (~> 1.14)
   suiren!
 
 BUNDLED WITH
