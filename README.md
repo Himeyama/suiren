@@ -54,4 +54,4 @@ Usage: suiren [options]
 
 ## ライセンス
 
-この gem は、[MIT ライセンス](https://opensource.org/licenses/MIT)) の条件の下でオープンソースとして利用できます。
+この gem は、[MIT ライセンス](https://opensource.org/licenses/MIT) の条件の下でオープンソースとして利用できます。

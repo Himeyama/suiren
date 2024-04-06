@@ -50,7 +50,7 @@ Usage: suiren [options]
 
 ## 貢獻
 
-歡迎在 GitHub 上報告錯誤和提交拉取請求：https://github.com/Himeyama/suiren。
+歡迎在 GitHub 上報告錯誤和提交拉取請求: https://github.com/Himeyama/suiren
 
 ## 許可證
 該 gem 可根據 [MIT 許可證](https://opensource.org/licenses/MIT) 作為開源軟件使用。
