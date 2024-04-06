@@ -1,7 +1,8 @@
 PATH
   remote: .
   specs:
-    suiren (24.04.04)
+    suiren (24.04.06)
+      i18n (~> 1.14)
       rake (~> 13.0)
       rubocop (~> 1.21)
 
@@ -44,7 +45,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  i18n (~> 1.14)
   suiren!
 
 BUNDLED WITH
