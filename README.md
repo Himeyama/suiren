@@ -1,6 +1,8 @@
 # suiren (睡蓮)
 suiren はコマンドを HTTP リクエストを表示するコマンドです。
 
+![image](https://github.com/Himeyama/suiren/assets/39254183/7d373c5a-8bc9-4f15-ae79-c49333f5e649)
+
 ## インストールについて
 ### gem のインストール
 
