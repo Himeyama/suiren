@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Suiren
-  VERSION = "24.04.06"
+  VERSION = "24.04.09"
 
   COPYRIGHT = <<~COPYRIGHT_TEXT
     The MIT License (MIT)
